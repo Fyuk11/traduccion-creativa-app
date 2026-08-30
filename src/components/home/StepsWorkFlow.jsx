@@ -26,7 +26,7 @@ export default function EcosystemSection() {
         "Copywriting persuasivo y UX/UI",
         "Desarrollo Mobile-First veloz"
       ],
-      image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1000&auto=format&fit=crop",
+      image: "/public/proyecto1.webp",
       reverse: false
     },
     {
@@ -41,7 +41,7 @@ export default function EcosystemSection() {
         "Mapas de calor y sesiones de usuario",
         "Privacidad total y control de tu data"
       ],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+      image: "/public/proyecto2.webp",
       reverse: true
     },
     {
@@ -56,7 +56,7 @@ export default function EcosystemSection() {
         "Automatización de captación",
         "Base de datos sólida y propia"
       ],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+      image: "/public/proyecto3.webp",
       reverse: false,
       isLast: true
     }

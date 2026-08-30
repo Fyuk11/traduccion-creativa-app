@@ -121,7 +121,7 @@ export default function MethodologySection() {
           >
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] group">
               <img 
-                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop" 
+                src="/home-equip.webp" 
                 alt="Traducción Creativa Enfoque" 
                 className="w-full h-[400px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />

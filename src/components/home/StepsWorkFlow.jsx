@@ -26,7 +26,7 @@ export default function EcosystemSection() {
         "Copywriting persuasivo y UX/UI",
         "Desarrollo Mobile-First veloz"
       ],
-      image: "/public/proyecto1.webp",
+      image: "/proyecto1.webp",
       reverse: false
     },
     {
@@ -41,7 +41,7 @@ export default function EcosystemSection() {
         "Mapas de calor y sesiones de usuario",
         "Privacidad total y control de tu data"
       ],
-      image: "/public/proyecto2.webp",
+      image: "/proyecto2.webp",
       reverse: true
     },
     {
@@ -56,7 +56,7 @@ export default function EcosystemSection() {
         "Automatización de captación",
         "Base de datos sólida y propia"
       ],
-      image: "/public/proyecto3.webp",
+      image: "/proyecto3.webp",
       reverse: false,
       isLast: true
     }

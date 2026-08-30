@@ -4,7 +4,7 @@ import { ArrowRight, Zap, ShieldCheck, Sparkles } from 'lucide-react';
 
 export default function EbookHero({ 
   onCtaClick, 
-  videoSrc = "/public/hero-vid-Ebook.mp4" 
+  videoSrc = "/hero-vid-Ebook.mp4" 
 }) {
   const containerVariants = {
     hidden: { opacity: 0 },

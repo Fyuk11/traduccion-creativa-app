@@ -29,21 +29,24 @@ export default function EbookHero({
   return (
     <section className="relative w-full min-h-[88vh] flex items-center justify-center pt-28 pb-20 px-6 sm:px-10 bg-[#07070d] text-center overflow-hidden font-sans">
       
-      {/* 📹 VIDEO DE FONDO */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover opacity-25 filter contrast-125 saturate-150"
-        >
-          <source src={videoSrc} type="video/mp4" />
-        </video>
-        
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/80 via-[#07070d]/70 to-[#07070d]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(147,51,234,0.12)_0%,rgba(6,182,212,0.08)_50%,transparent_80%)]" />
-      </div>
+     {/* 📹 VIDEO DE FONDO */}
+    <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        fetchPriority="high"
+        /* poster="/path/tu-poster-ebook.jpg" */ /* Opcional: Descomentá si agregás una imagen poster */
+        className="w-full h-full object-cover opacity-25 filter contrast-125 saturate-150"
+      >
+        <source src={videoSrc} type="video/mp4" />
+      </video>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/80 via-[#07070d]/70 to-[#07070d]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(147,51,234,0.12)_0%,rgba(6,182,212,0.08)_50%,transparent_80%)]" />
+    </div>
 
       {/* CONTENIDO BIEN DISTRIBUIDO (max-w-5xl) */}
       <motion.div 

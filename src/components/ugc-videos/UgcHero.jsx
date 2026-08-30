@@ -11,20 +11,23 @@ export default function UgcHero() {
   return (
     <section id="problema" className="relative py-16 lg:py-24 overflow-hidden bg-slate-50">
       
-      {/* 📹 Video de Fondo con Textura */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover opacity-80"
-        >
-          <source src="/ugc/background-ugcA.mp4" type="video/mp4" />
-        </video>
-        {/* Capa suave para difuminar los bordes hacia el fondo blanco */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-slate-50/80" />
-      </div>
+     {/* 📹 Video de Fondo con Textura */}
+    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        fetchPriority="high"
+        /* poster="/ugc/background-ugcA-poster.jpg" */ /* Opcional: Descomentá si agregás una imagen poster */
+        className="w-full h-full object-cover opacity-80"
+      >
+        <source src="/ugc/background-ugcA.mp4" type="video/mp4" />
+      </video>
+      {/* Capa suave para difuminar los bordes hacia el fondo blanco */}
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-slate-50/80" />
+    </div>
 
       {/* Resplandores de luz lavanda en el fondo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-violet-200/30 blur-[130px] rounded-full pointer-events-none z-0" />

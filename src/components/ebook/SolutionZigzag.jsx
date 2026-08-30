@@ -11,21 +11,21 @@ export default function SolutionZigzag() {
           Descubrí el <em className="text-cyan-300 not-italic font-semibold">Prompt Exacto</em> para que la IA escupa guiones persuasivos adaptados a tu nicho en 5 segundos. Adiós al bloqueo creativo.
         </>
       ),
-      imgSrc: '/public/ebook-zigzag1.webp',
+      imgSrc: '/ebook-zigzag1.webp',
       alt: 'Captura de pantalla del chat generando un guion con IA'
     },
     {
       id: '02',
       title: '02. Clonación de Voz y Avatares',
       description: 'Usá 2 herramientas gratuitas (que nadie te cuenta) para generar voces hiperrealistas o usar avatares que hablen por vos. Nunca más vas a tener que salir en cámara si no querés.',
-      imgSrc: '/public/ebook-zigzag2.webp',
+      imgSrc: '/ebook-zigzag2.webp',
       alt: 'Descripción de la herramienta de voz y avatares'
     },
     {
       id: '03',
       title: '03. Videos listos sin edición',
       description: 'No necesitas pasar horas editando un video. Con nuestro método tenés un video listo para publicar en menos de 5 minutos.',
-      imgSrc: '/public/ebook-zigzag3.webp',
+      imgSrc: '/ebook-zigzag3.webp',
       alt: 'Descripción de video final listo para publicar'
     }
   ];

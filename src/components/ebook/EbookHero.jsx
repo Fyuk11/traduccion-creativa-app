@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Zap, ShieldCheck, Sparkles } from 'lucide-react';
 
 export default function EbookHero({ 
-  onCtaClick, 
   videoSrc = "/hero-vid-Ebook.mp4" 
 }) {
   const containerVariants = {
@@ -88,16 +87,18 @@ export default function EbookHero({
           <span className="text-cyan-300 font-medium">Cero costos. Cero cámaras.</span>
         </motion.p>
 
-        {/* Botón CTA con tamaño y resplandor justo */}
-        <motion.div variants={fadeUpVariant} className="w-full max-w-md flex justify-center mb-14">
-          <button
-            onClick={onCtaClick}
-            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-9 py-4 rounded-xl bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-base transition-all duration-300 shadow-[0_0_30px_rgba(147,51,234,0.38)] active:scale-95 group"
-          >
-            ⚡ SÍ, QUIERO MI PRIMER VIDEO HOY
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
-        </motion.div>
+       {/* Botón CTA con enlace directo a Hotmart */}
+<motion.div variants={fadeUpVariant} className="w-full max-w-md flex justify-center mb-14">
+  <a
+    href="https://go.hotmart.com/F107264981G"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-9 py-4 rounded-xl bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-base transition-all duration-300 shadow-[0_0_30px_rgba(147,51,234,0.38)] active:scale-95 group text-center"
+  >
+    ⚡ SÍ, QUIERO MI PRIMER VIDEO HOY
+    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+  </a>
+</motion.div>
 
         {/* Highlights del Pie bien separados */}
         <motion.div

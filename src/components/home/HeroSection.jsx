@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Sparkles, MessageSquare } from 'lucide-react';
 import Button from '../common/Button';
@@ -37,7 +36,6 @@ const TypewriterText = ({ text, delay = 0, speed = 0.03, className = "" }) => {
 
 /**
  * COMPONENTE AYUDANTE 2: Palabra Mágica ("creativa")
- * Ahora la opacidad y el color son independientes.
  */
 const AnimatedWord = ({ word, typeDelay = 0, rainbowDelay = 4 }) => {
   return (
@@ -48,7 +46,6 @@ const AnimatedWord = ({ word, typeDelay = 0, rainbowDelay = 4 }) => {
         hidden: { opacity: 1 },
         visible: {
           opacity: 1,
-          // staggerChildren maneja la velocidad del tipeo
           transition: { staggerChildren: 0.08, delayChildren: typeDelay }
         }
       }}
@@ -59,18 +56,17 @@ const AnimatedWord = ({ word, typeDelay = 0, rainbowDelay = 4 }) => {
           key={index}
           variants={{
             hidden: { opacity: 0 },
-            visible: { opacity: 1 } // Primero aparece (tipeo)
+            visible: { opacity: 1 }
           }}
         >
           <motion.span
-            // Y de forma independiente, maneja el color arcoíris
             animate={{
               color: ["#fbbf24", "#fbbf24", "#a855f7", "#ec4899", "#3b82f6", "#14b8a6", "#fbbf24"]
             }}
             transition={{
-              duration: 5,           
+              duration: 5,          
               repeat: Infinity,      
-              delay: rainbowDelay + (index * 0.1), // Espera a que termine todo para brillar
+              delay: rainbowDelay + (index * 0.1),
               ease: "linear"
             }}
           >
@@ -99,7 +95,6 @@ export default function HeroSection() {
           playsInline
           className="w-full h-full object-cover opacity-25 scale-105"
         >
-          {/* ACÁ CARGAMOS TU VIDEO: Asegurate de poner tu video en la carpeta "public" */}
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-[#070709] via-[#070709]/60 to-transparent" />
@@ -109,12 +104,13 @@ export default function HeroSection() {
       {/* CONTENIDO DEL HERO */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center space-y-6 mt-16">
         
-        {/* Etiqueta superior */}
+        {/* Etiqueta superior con feedback táctil */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
+          whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-xs font-mono tracking-widest uppercase text-slate-300"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-xs font-mono tracking-widest uppercase text-slate-300 cursor-default select-none"
         >
           <Sparkles className="w-3.5 h-3.5 text-amber-400" />
           <span>Traducción Creativa & Systems</span>
@@ -123,18 +119,15 @@ export default function HeroSection() {
         {/* Título Principal Tipeado */}
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter text-white leading-[1.05] min-h-[120px] sm:min-h-[100px]">
           <TypewriterText text="Traducción " delay={0.5} speed={0.05} />
-          {/* Empieza a tipear en 1.1s y el arcoíris arranca a los 6s */}
           <AnimatedWord word="creativa" typeDelay={1.1} rainbowDelay={6} />
         </h1>
 
         {/* Subtítulos Tipeados en secuencia */}
         <div className="max-w-3xl mx-auto space-y-2 min-h-[80px]">
           <p className="text-xl sm:text-2xl text-white font-semibold">
-            {/* Empieza a tipear al 2.0s */}
             <TypewriterText text="Damos vida digital a tus ideas." delay={2.0} speed={0.03} />
           </p>
           <p className="text-base sm:text-lg text-slate-400 font-light leading-relaxed">
-            {/* Empieza a tipear al 3.5s */}
             <TypewriterText 
               text="Experiencias digitales profesionales: performance, SEO técnico y conversión en primer plano." 
               delay={3.5} 
@@ -143,7 +136,7 @@ export default function HeroSection() {
           </p>
         </div>
 
-        {/* Botón CTA (Aparece suave al final de todo el tipeo) */}
+        {/* Botón CTA */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

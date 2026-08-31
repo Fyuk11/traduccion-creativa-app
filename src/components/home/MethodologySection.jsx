@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Zap, BarChart2, Smartphone, ShieldCheck } from 'lucide-react';
 
@@ -34,7 +33,7 @@ export default function MethodologySection() {
       {/* Resplandor sutil de fondo */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
-      {/* ISOTIPO VECTORIAL CON MAYOR AMPLITUD EN EL MOVIMIENTO */}
+      {/* ISOTIPO VECTORIAL */}
       <div className="absolute top-10 right-6 sm:right-16 lg:right-24 opacity-25 sm:opacity-35 pointer-events-none z-0 flex items-center justify-center">
         <motion.svg 
           animate={{
@@ -51,7 +50,6 @@ export default function MethodologySection() {
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Flecha Izquierda (Se aleja más hacia la izquierda: -14px) */}
           <motion.path 
             animate={{ x: [0, -14, 0] }}
             transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
@@ -62,7 +60,6 @@ export default function MethodologySection() {
             strokeLinejoin="round"
           />
 
-          {/* Flecha Derecha (Se aleja más hacia la derecha: +14px) */}
           <motion.path 
             animate={{ x: [0, 14, 0] }}
             transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
@@ -73,7 +70,6 @@ export default function MethodologySection() {
             strokeLinejoin="round"
           />
 
-          {/* Punteado central con expansión al ritmo de las flechas */}
           <motion.g
             animate={{ scale: [0.8, 1.25, 0.8], opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
@@ -108,7 +104,7 @@ export default function MethodologySection() {
           </p>
         </motion.div>
 
-        {/* BLOQUE DE ENFOQUE (IMAGEN + TEXTO & LISTA) */}
+        {/* BLOQUE DE ENFOQUE */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* IMAGEN LATERAL */}
@@ -127,14 +123,14 @@ export default function MethodologySection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-transparent to-transparent opacity-80"></div>
             </div>
-            {/* Pequeño detalle estético flotante */}
+            
             <div className="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-3 bg-[#161616] border border-white/10 px-5 py-3 rounded-2xl shadow-xl">
               <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
               <span className="text-xs font-mono text-slate-300">Sistema Activo</span>
             </div>
           </motion.div>
 
-          {/* CONTENIDO Y VIÑETAS */}
+          {/* CONTENIDO Y VIÑETAS TÁCTILES */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -155,12 +151,13 @@ export default function MethodologySection() {
               </p>
             </div>
 
-            {/* LISTA DE CARACTERÍSTICAS (VIÑETAS) */}
+            {/* LISTA DE CARACTERÍSTICAS (VIÑETAS CON FEEDBACK TÁCTIL) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {features.map((item, index) => (
-                <div 
-                  key={index} 
-                  className="flex items-start gap-3 bg-[#141414] border border-white/5 p-4 rounded-2xl hover:border-[#d4af37]/40 transition-colors"
+                <motion.div 
+                  key={index}
+                  whileTap={{ scale: 0.96 }}
+                  className="flex items-start gap-3 bg-[#141414] border border-white/5 p-4 rounded-2xl hover:border-[#d4af37]/40 active:border-[#d4af37]/60 transition-colors cursor-default select-none"
                 >
                   <div className="p-2 rounded-xl bg-white/5 shrink-0">
                     {item.icon}
@@ -168,7 +165,7 @@ export default function MethodologySection() {
                   <span className="text-xs sm:text-sm text-slate-300 font-medium leading-snug">
                     {item.text}
                   </span>
-                </div>
+                </motion.div>
               ))}
             </div>
 

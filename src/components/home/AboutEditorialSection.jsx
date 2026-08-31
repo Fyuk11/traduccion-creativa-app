@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { AlignLeft, BarChart3, Monitor, ArrowRight } from 'lucide-react';
 
@@ -66,7 +65,7 @@ export default function AboutEditorialSection() {
         className="max-w-6xl mx-auto space-y-16 relative z-10"
       >
         
-        {/* 1. TÍTULO Y SUBTÍTULO */}
+        {/* TÍTULO Y SUBTÍTULO */}
         <motion.div variants={itemVariants} className="text-center space-y-4 max-w-4xl mx-auto">
           <div className="w-16 h-1 mx-auto rounded-full mb-4" style={{ background: 'linear-gradient(45deg, #d4af37, #a37e2c)' }}></div>
           
@@ -79,15 +78,15 @@ export default function AboutEditorialSection() {
           </p>
         </motion.div>
 
-        {/* 2. LAS 3 TARJETAS */}
+        {/* LAS 3 TARJETAS (Optimizadas con whileTap) */}
         <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cardsData.map((card, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -8, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              className="bg-white rounded-3xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-slate-200/90 flex flex-col justify-between relative group hover:shadow-[0_20px_40px_rgba(212,175,55,0.15)] hover:border-[#d4af37]/60 transition-all"
+              whileTap={{ scale: 0.96 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="bg-white rounded-3xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-slate-200/90 flex flex-col justify-between relative group hover:shadow-[0_20px_40px_rgba(212,175,55,0.15)] hover:border-[#d4af37]/60 active:border-[#d4af37] transition-all cursor-pointer"
             >
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-slate-200/80 bg-slate-50 text-xs font-mono text-slate-700">
@@ -104,18 +103,18 @@ export default function AboutEditorialSection() {
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs font-mono text-slate-400 group-hover:text-[#a37e2c] transition-colors">
+              <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs font-mono text-slate-400 group-hover:text-[#a37e2c] group-active:text-[#a37e2c] transition-colors">
                 <span>// Fase 0{index + 1}</span>
-                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 group-active:translate-x-1 transition-transform" />
               </div>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* CONTENEDOR INFERIOR CON EFECTO DE VIENTO Y ELEMENTOS DELANTE */}
+        {/* CONTENEDOR INFERIOR */}
         <div className="relative py-12 px-4 rounded-3xl overflow-hidden">
           
-          {/* EFECTO DE VIENTO: Ráfaga de gradiente que cruza de izquierda a derecha, frena y repite */}
+          {/* EFECTO DE VIENTO */}
           <motion.div 
             animate={{
               x: ['-100%', '100%'],
@@ -125,18 +124,18 @@ export default function AboutEditorialSection() {
               duration: 5,
               repeat: Infinity,
               ease: "easeInOut",
-              times: [0, 0.4, 0.7, 1] // Esto le da el efecto de inercia y pausa
+              times: [0, 0.4, 0.7, 1]
             }}
             className="absolute inset-y-0 w-3/4 -z-10 blur-3xl pointer-events-none bg-gradient-to-r from-transparent via-amber-300/50 to-purple-300/40"
           />
 
-          {/* CONTENIDO DELANTE DE TODO (Diferencial y CTA bien visibles) */}
           <div className="space-y-10 relative z-20 max-w-4xl mx-auto">
             
-            {/* 3. CAJA DIFERENCIAL */}
+            {/* CAJA DIFERENCIAL */}
             <motion.div 
               variants={itemVariants}
-              className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-8 shadow-[0_15px_35px_rgba(0,0,0,0.06)] relative overflow-hidden"
+              whileTap={{ scale: 0.98 }}
+              className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-8 shadow-[0_15px_35px_rgba(0,0,0,0.06)] relative overflow-hidden transition-all"
             >
               <div className="absolute left-0 top-0 bottom-0 w-2.5" style={{ background: 'linear-gradient(45deg, #d4af37, #a37e2c)' }}></div>
               
@@ -145,15 +144,15 @@ export default function AboutEditorialSection() {
               </p>
             </motion.div>
 
-            {/* 4. BOTÓN CTA INFERIOR */}
+            {/* BOTÓN CTA INFERIOR */}
             <motion.div variants={itemVariants} className="text-center pt-2">
               <motion.a 
                 href={waLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.03, y: -2 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-base text-slate-900 bg-white border-2 border-[#d4af37] shadow-[0_15px_40px_rgba(212,175,55,0.35)] hover:bg-[#d4af37] hover:text-white transition-all"
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-base text-slate-900 bg-white border-2 border-[#d4af37] shadow-[0_15px_40px_rgba(212,175,55,0.35)] hover:bg-[#d4af37] hover:text-white active:bg-[#d4af37] active:text-white transition-all"
               >
                 <span>Quiero este sistema en mi marca</span>
               </motion.a>

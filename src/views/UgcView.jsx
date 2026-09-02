@@ -12,20 +12,21 @@ export default function UgcView() {
   return (
     <>
       <Helmet>
-        <title>Videos UGC que Convierten | Traducción Creativa</title>
-        <meta name="description" content="Impulsá tus ventas con videos UGC y anuncios para redes sociales. Creadores reales, contenido auténtico y estrategias audiovisuales para tu marca." />
+        <title>Videos UGC & Ads para Ecommerce y Marcas | Traducción Creativa</title>
+        <meta name="description" content="Impulsá las ventas de tu tienda online o marca con videos UGC y anuncios para redes sociales. Creadores reales, contenido auténtico y estrategias de video marketing." />
+        <meta name="keywords" content="videos ugc, contenido ugc, ads para ecommerce, videos para redes sociales, anuncios video, marketing de contenidos" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Videos UGC y Ads para tu Marca" />
-        <meta property="og:description" content="Mostramos el verdadero valor de tu producto con videos UGC creados para vender. Creadores reales, contenido que convierte." />
+        <meta property="og:title" content="Videos UGC y Ads para Ecommerce y Marcas" />
+        <meta property="og:description" content="Impulsá las ventas de tu tienda online o marca con videos UGC y anuncios para redes sociales. Creadores reales y contenido auténtico." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://traduccioncreativa.com/#ugc" />
         <meta property="og:image" content="https://traduccioncreativa.com/assets/img/logo-share.png" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Videos UGC y Ads para tu Marca" />
-        <meta name="twitter:description" content="Mostramos el verdadero valor de tu producto con videos UGC creados para vender." />
+        <meta name="twitter:title" content="Videos UGC y Ads para Ecommerce y Marcas" />
+        <meta name="twitter:description" content="Impulsá las ventas de tu tienda online con videos UGC y anuncios para redes sociales." />
         <meta name="twitter:image" content="https://traduccioncreativa.com/assets/img/logo-share.png" />
       </Helmet>
 

@@ -11,20 +11,21 @@ export default function HomeView() {
   return (
     <>
       <Helmet>
-        <title>Traducción Creativa | Damos vida digital a tus ideas.</title>
-        <meta name="description" content="Desarrollo de landings, portafolios y contenido audiovisual de alto rendimiento. Diseño moderno, SEO técnico y estrategias que convierten." />
+        <title>Traducción Creativa | Páginas Web, Tiendas Online & Videos UGC</title>
+        <meta name="description" content="Agencia de desarrollo web y creación de contenido audiovisual. Diseñamos páginas web, tiendas online (ecommerce), portafolios e landing pages optimizadas para SEO y ventas." />
+        <meta name="keywords" content="paginas web, desarrollo web, tiendas online, ecommerce, portafolios, diseño web, landing page, SEO, agencia web" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Traducción Creativa - Web & Contenido" />
-        <meta property="og:description" content="Landings, portafolios y videos listos para convertir. SEO, performance y diseño premium." />
+        <meta property="og:title" content="Traducción Creativa | Páginas Web, Ecommerce & Videos UGC" />
+        <meta property="og:description" content="Diseño de páginas web, tiendas online (ecommerce), portafolios interactivos y contenido UGC de alto rendimiento." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://traduccioncreativa.com/" />
         <meta property="og:image" content="https://traduccioncreativa.com/assets/img/logo-share.png" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Traducción Creativa - Web & Contenido" />
-        <meta name="twitter:description" content="Landings, portafolios y videos listos para convertir. SEO, performance y diseño premium." />
+        <meta name="twitter:title" content="Traducción Creativa | Páginas Web, Ecommerce & Videos UGC" />
+        <meta name="twitter:description" content="Diseño de páginas web, tiendas online (ecommerce), portafolios interactivos y contenido UGC de alto rendimiento." />
         <meta name="twitter:image" content="https://traduccioncreativa.com/assets/img/logo-share.png" />
       </Helmet>
 

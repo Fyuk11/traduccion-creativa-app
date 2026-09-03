@@ -38,7 +38,7 @@ export default function EbookHero({
         preload="auto"
         fetchPriority="high"
         /* poster="/path/tu-poster-ebook.jpg" */ /* Opcional: Descomentá si agregás una imagen poster */
-        className="w-full h-full object-cover opacity-25 filter contrast-125 saturate-150"
+        className="w-full h-full object-cover opacity-60 filter contrast-125 saturate-150"
       >
         <source src={videoSrc} type="video/mp4" />
       </video>

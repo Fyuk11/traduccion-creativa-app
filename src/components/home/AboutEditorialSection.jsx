@@ -19,7 +19,7 @@ export default function AboutEditorialSection() {
       title: "Escuchar & Diseñar",
       description: (
         <>
-          Nos sumergimos en tu proyecto para entender su esencia, y la transformamos en una arquitectura persuasiva que <strong className="text-slate-950 font-bold">guía al usuario hacia la acción.</strong>
+          Nos sumergimos en tu proyecto para entender qué lo hace único, y lo transformamos en un diseño que guía a cada visitante, paso a paso, hacia lo que necesitás:<strong className="text-slate-950 font-bold"> que te escriban, que compren, que agenden.</strong>
         </>
       )
     },
@@ -37,7 +37,7 @@ export default function AboutEditorialSection() {
       icon: <Monitor className="w-4 h-4 text-[#a37e2c]" />,
       tag: "Generamos",
       title: "Impacto & Identidad",
-      description: "Logramos una presencia digital que respira la esencia de tu marca, diseñada estratégicamente para captar la atención y convertir visitantes en una base de datos sólida a través de recursos de valor."
+      description: "Logramos una presencia digital que se siente 100% tuya, pensada para captar la atención y convertir visitantes en contactos reales — con contenido de valor que la gente quiere dejarte sus datos a cambio."
     }
   ];
 

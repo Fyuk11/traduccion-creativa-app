@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Check, MessageCircle, ArrowRight, Zap } from 'lucide-react';
+import { Check, MessageCircle, ArrowRight, Zap } from 'lucide-react';
 
 export default function UgcPricing() {
   const handleWhatsApp = (planName) => {
@@ -16,10 +16,7 @@ export default function UgcPricing() {
         
         {/* Encabezado con contraste alto */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-400/30 text-violet-300 text-xs font-bold tracking-widest uppercase shadow-inner">
-            <Sparkles className="w-3.5 h-3.5 text-violet-400" />
-            <span>Opciones de Inversión</span>
-          </div>
+         
 
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             ¿Querés crear contenido{' '}

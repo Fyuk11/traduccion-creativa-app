@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Bot, Zap, TrendingUp, CheckCircle2, ArrowUpRight } from 'lucide-react';
+import { Bot, Zap, TrendingUp, CheckCircle2, ArrowUpRight } from 'lucide-react';
 
 export default function UgcOpportunity() {
   const scrollToSection = (id) => {
@@ -14,24 +14,24 @@ export default function UgcOpportunity() {
       icon: Bot,
       tag: 'Velocidad & Escala',
       title: 'Procesos de Producción con IA',
-      desc: 'Generamos variantes de guiones, hooks de alta retención y voz en off ultra-realista en tiempo récord para no pausar tus campañas.',
-      highlight: '10x más rápido',
+      desc: 'De semanas a días: escalamos tu producción de contenido sin que dependas de una productora tradicional.',
+      highlight: 'Semanas a Días',
       accent: 'border-violet-200 bg-violet-50/40 text-violet-700'
     },
     {
       icon: Zap,
       tag: 'Formato Orgánico',
       title: 'Estética UGC Auténtica',
-      desc: 'Los anuncios que parecen anuncios se saltean. El contenido de aspecto nativo genera confianza e incrementa la tasa de clic (CTR).',
-      highlight: '+3.4x en CTR',
+      desc: 'Los anuncios que parecen publicidad se saltean. El contenido con estética nativa genera más confianza — y más clics.',
+      highlight: 'Mayor CTR & Confianza',
       accent: 'border-purple-200 bg-purple-50/40 text-purple-700'
     },
     {
       icon: TrendingUp,
       tag: 'Optimización',
       title: 'Testing Continuo de Creativos',
-      desc: 'No apostamos a un solo video. Creamos ángulos de venta múltiples para identificar qué gancho convierte mejor a menor costo por adquisición (CPA).',
-      highlight: '-40% en CPA',
+      desc: 'No apostamos a un solo video: testeamos varios ángulos de venta para encontrar el que te da mejor resultado al menor costo.',
+      highlight: 'Menor Costo por Venta',
       accent: 'border-fuchsia-200 bg-fuchsia-50/40 text-fuchsia-700'
     }
   ];
@@ -47,10 +47,7 @@ export default function UgcOpportunity() {
         
         {/* Encabezado Mobile-First */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100/80 border border-violet-200 text-violet-700 text-xs font-bold tracking-widest uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-            <span>Nuestra Ventaja Competitiva</span>
-          </div>
+          
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
             La combinación perfecta entre{' '}
@@ -97,10 +94,10 @@ export default function UgcOpportunity() {
                   </p>
                 </div>
 
-                {/* Métricas destacadas en el footer de la tarjeta */}
+                {/* Resultado Clave en el footer de la tarjeta */}
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-xs font-mono text-slate-400 font-bold uppercase">Impacto estimado</span>
-                  <span className="text-sm font-extrabold text-violet-700 flex items-center gap-1">
+                  <span className="text-xs font-mono text-slate-400 font-bold uppercase">Resultado Clave</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-violet-700 flex items-center gap-1">
                     {item.highlight}
                     <ArrowUpRight className="w-4 h-4" />
                   </span>

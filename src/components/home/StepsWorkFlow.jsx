@@ -19,7 +19,7 @@ export default function EcosystemSection() {
       title: "Arquitectura & Diseño",
       description: (
         <>
-          Le damos cuerpo a tu marca (Landing, Portafolio o Sitio). No usamos plantillas genéricas; diseñamos la interfaz con un único objetivo: <strong className="text-slate-950 font-bold">captar la atención y guiar al usuario hacia la acción</strong> sin perder tu esencia.
+         No usamos plantillas genéricas; diseñamos para que cualquiera <strong className="text-slate-950 font-bold">entienda en 3 segundos qué hacés y qué tiene que hacer después</strong>, sin perder tu esencia.
         </>
       ),
       points: [
@@ -49,7 +49,7 @@ export default function EcosystemSection() {
       title: "Captura & Conversión",
       description: (
         <>
-          Tu web no es solo una vidriera; es una herramienta para construir tu comunidad. Integramos formularios inteligentes y sistemas de descarga de Lead Magnets optimizados para transformar a cada visitante en un contacto de confianza.
+          Tu web no es solo una vidriera; es una herramienta para construir tu comunidad. Integramos formularios simples y recursos gratuitos (guías, descuentos, contenido de valor) para transformar a cada visitante en un contacto real, no en una visita que se va y no vuelve.
         </>
       ),
       points: [

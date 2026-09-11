@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sliders, Sparkles, ArrowRight, ShieldAlert, Zap, Check, ArrowLeftRight, TrendingUp } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldAlert, Zap, Check, ArrowLeftRight, TrendingUp } from 'lucide-react';
 
 export default function InteractiveShowcase() {
   // El estado mágico que controla todo el componente (de 0 a 100)
@@ -25,10 +25,7 @@ export default function InteractiveShowcase() {
           viewport={{ once: true }}
           className="text-center space-y-4"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono uppercase tracking-widest shadow-sm">
-            <Sliders className="w-3.5 h-3.5 animate-pulse" />
-            Laboratorio de Contraste Activo
-          </div>
+          
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
             Deslizá para ver la metamorfosis
           </h2>

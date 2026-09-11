@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight} from 'lucide-react';
 
 export default function UgcHero() {
   const scrollToSection = (id) => {
@@ -37,10 +37,7 @@ export default function UgcHero() {
           
           {/* Columna Izquierda: Copy */}
           <div className="lg:col-span-7 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100/90 border border-violet-200 text-violet-700 text-xs font-bold tracking-wider uppercase mb-6 backdrop-blur-sm">
-              <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-              <span>Estrategia Audiovisual & IA</span>
-            </div>
+            
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.1] mb-6">
               Mostrar tu producto{' '}

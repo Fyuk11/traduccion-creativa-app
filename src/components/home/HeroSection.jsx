@@ -129,7 +129,7 @@ export default function HeroSection() {
           </p>
           <p className="text-base sm:text-lg text-slate-400 font-light leading-relaxed">
             <TypewriterText 
-              text="Experiencias digitales profesionales: performance, SEO técnico y conversión en primer plano." 
+              text="Te ayudamos a que tu marca venda más en internet — con diseño que enamora y datos que lo demuestran. Performance, SEO técnico y conversión, sin perder tu esencia." 
               delay={3.5} 
               speed={0.02} 
             />

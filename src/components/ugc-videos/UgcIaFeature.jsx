@@ -1,4 +1,4 @@
-import { Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function UgcIaFeature() {
   const scrollToSection = (id) => {
@@ -36,10 +36,7 @@ export default function UgcIaFeature() {
 
           {/* Columna Derecha: Copy + Beneficios */}
           <div className="lg:col-span-7 space-y-6 text-left order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100/90 border border-violet-200 text-violet-700 text-xs font-bold tracking-widest uppercase">
-              <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-              <span>Agilidad & Escala</span>
-            </div>
+            
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
               Hoy con la inteligencia artificial, crear contenido de calidad{' '}

@@ -147,7 +147,7 @@ export default function MethodologySection() {
                 Traducción Creativa <span style={goldGradientStyle}>& Datos</span>
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Nos fundimos con tu proyecto para entender su tono y objetivo. Captamos lo que debe decir y cómo debe sentirse, pero le sumamos la capa estratégica para que no sea solo una cara bonita. Somos el puente entre tu idea y una plataforma donde <strong className="text-white font-bold">vos tenés el control total de tus datos</strong> (privacidad absoluta, sin pedirte contraseñas).
+              Nos metemos de lleno en tu proyecto para entender qué tiene que decir y cómo tiene que sentirse. Le sumamos estrategia para que no sea solo una cara bonita, sino algo que realmente convierta. Y el control de tus datos <strong className="text-white font-bold">es siempre tuyo: nunca te pedimos contraseñas.</strong>
               </p>
             </div>
 

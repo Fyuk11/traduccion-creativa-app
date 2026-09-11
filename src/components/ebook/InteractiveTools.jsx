@@ -20,7 +20,7 @@ export default function InteractiveTools() {
             <span>Probá la potencia antes de comprar</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
-            Herramientas Interactivas Incluidas
+            Herramientas Interactivas 
           </h2>
           <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
             Seleccioná una de las burbujas para interactuar con los generadores que vas a dominar en el e-book.

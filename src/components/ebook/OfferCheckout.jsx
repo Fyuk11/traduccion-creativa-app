@@ -165,11 +165,9 @@ export default function OfferCheckout() {
               <div className="flex items-center justify-between gap-2 p-2.5 rounded-2xl bg-rose-950/60 border border-rose-500/40">
                 <div className="flex items-center gap-2 text-rose-300 text-xs font-semibold">
                   <Flame className="w-4 h-4 text-rose-400 animate-pulse" />
-                  <span>Únicas 50 copias a este precio</span>
+                  <span>Precio de lanzamiento por tiempo limitado</span>
                 </div>
-                <span className="text-[11px] bg-rose-500/20 text-rose-300 font-bold px-2 py-0.5 rounded-full border border-rose-500/40">
-                  Quedan 12
-                </span>
+              
               </div>
 
               {/* Caja Requisitos */}

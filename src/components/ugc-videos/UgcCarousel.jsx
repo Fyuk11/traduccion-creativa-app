@@ -1,4 +1,4 @@
-import { Sparkles } from 'lucide-react';
+
 
 export default function UgcCarousel() {
   const items = [
@@ -65,10 +65,7 @@ export default function UgcCarousel() {
       {/* Encabezado */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-10 sm:mb-14">
         <div className="space-y-3 max-w-2xl text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100/90 border border-violet-200 text-violet-700 text-xs font-bold tracking-widest uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-            <span>Galería Dinámica</span>
-          </div>
+       
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
             Formatos diseñados para{' '}

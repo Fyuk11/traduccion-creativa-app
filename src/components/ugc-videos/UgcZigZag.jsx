@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function UgcZigZag() {
   const steps = [
@@ -63,10 +63,7 @@ export default function UgcZigZag() {
         
         {/* Header Principal */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-24 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100/90 border border-violet-200 text-violet-700 text-xs font-bold tracking-widest uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-            <span>El Método Creativo</span>
-          </div>
+          
 
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight">
             Tu marca necesita...

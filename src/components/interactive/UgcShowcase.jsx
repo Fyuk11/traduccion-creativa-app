@@ -23,7 +23,7 @@ export default function UgcShowcase() {
       badge: 'Retención Alta',
       accentColor: 'from-violet-600 to-indigo-600',
       badgeBg: 'bg-violet-100 text-violet-700 border-violet-200',
-      stat: '+85% Retención Inicial',
+      stat: 'Retener la atención en los primeros 3 segundos — ahí se juega la mitad del video.',
       icon: Flame,
       previewOverlay: '¿Tu producto no vende como debería?'
     },
